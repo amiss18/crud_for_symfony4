@@ -21,7 +21,7 @@ before_install:
   - composer self-update
 
 install:
-  - composer install
+  - composer update
   - ./vendor/bin/simple-phpunit install
 
 script:
