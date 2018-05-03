@@ -1,0 +1,43 @@
+###> symfony/framework-bundle ###
+/.idea/
+/vendor/
+
+/public/bundles/
+/node_modules/
+npm-debug.log
+yarn-error.log
+/var/*
+!/var/cache
+/var/cache/*
+!var/cache/.gitkeep
+!/var/data
+!/var/log
+/var/log/*
+!var/log/.gitkeep
+!/var/sessions
+/var/sessions/*
+!var/sessions/.gitkeep
+!/var/demo_test.sqlite
+!/var/demoSf4DB.sqlite
+!var/SymfonyRequirements.php
+demo-sf4.git/branches/
+demo-sf4.git/objects/info/
+demo-sf4.git/refs/
+public/vendor/
+src/Migrations/Version20180124123615.php
+src/Migrations/Version20180124124028.php
+/.docker/data/db/*
+
+###> symfony/web-server-bundle ###
+/.web-server-pid
+###< symfony/web-server-bundle ###
+
+###> symfony/webpack-encore-pack ###
+/node_modules/
+/public/build/
+npm-debug.log
+###< symfony/webpack-encore-pack ###
+/.composer/
+###> friendsofphp/php-cs-fixer ###
+/.php_cs
+/.php_cs.cache

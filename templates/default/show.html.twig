@@ -1,0 +1,30 @@
+{# app/Resources/views/base.html.twig #}
+
+{% extends "base.html.twig" %}
+
+{% block body %}
+
+
+    {% include 'default/inc/flash.html.twig' %}
+    <h1 class="my-4">{{ product.name }}</h1>
+
+
+    <div class="row">
+        <div class="col-md-7">
+            <p>{{ product.description | nl2br }}</p>
+            <p class="h5"> Price : <strong>{{ product.price }}€</strong></p>
+            <p> <small class="text-muted">Category:</small> <span class="badge-info">{{ product.cat }}</span></p>
+        </div>
+        <div class="col-md-5">
+            <img class="img-fluid rounded mb-3 mb-md-0" src="{{ asset('img/default.svg') }}" alt="{{ product.name }}"> <br> <br>
+
+            <a class="btn btn-primary btn-lg"  href="{{ path('product_edit', {'id': product.id}) }}"> Edit</a>
+            <a href="{{ path('product_delete',{'id':product.id} ) }}"  class="btn btn-lg btn-danger" id="confirm" data-question="Are you sure?">Click to delete</a>
+
+
+        </div>
+    </div>
+
+
+
+{% endblock body %}

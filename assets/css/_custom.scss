@@ -1,0 +1,21 @@
+/*
+$theme-colors: () !default;
+$theme-colors: map-merge((
+        primary: #D6381B,
+        secondary: gray,
+        success: green,
+        info: #D6381B,
+        warning: yellow,
+        danger: red
+), $theme-colors);
+*/
+// In a custom variables file, before or after.
+$theme-colors: (
+        primary: #D6381B,
+        secondary: gray,
+        success: green,
+        info: #D6381B,
+        warning: yellow,
+        danger: red
+);
+

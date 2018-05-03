@@ -1,0 +1,31 @@
+{# app/Resources/views/base.html.twig #}
+{% extends "base.html.twig" %}
+
+
+{% block body %}
+    <h1 class="my-4">Contact us</h1>
+
+    <div class="row">
+        <div class="col-md-8">
+            <form action="{{ path('send_mail') }}" method="post">
+                <div class="form-group">
+                    <label for="email">Your email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="usr">Name:</label>
+                    <input type="text" class="form-control" id="usr" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="comment">Your message:</label>
+                    <textarea class="form-control" rows="5" id="comment" name="message" required></textarea>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-default">Send message !</button>
+
+            </form>
+        </div>
+    </div>
+
+{% endblock body %}
+

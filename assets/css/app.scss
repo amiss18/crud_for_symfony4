@@ -1,0 +1,47 @@
+/*!
+ * Start Bootstrap - 1 Col Portfolio (http://startbootstrap.com/template-overviews/1-col-portfolio)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-1-col-portfolio/blob/master/LICENSE)
+ */
+
+
+//@import "~compass-mixins/lib/compass";
+//@import "~compass/test/fixtures/sass/base";
+
+//@import "mixins";
+
+
+//@import "../../node_modules/bootstrap/scss/variables";
+//@import 'font-awesome/scss/fontawesome';
+@import '~font-awesome/scss/font-awesome';
+
+
+
+@import '~bootstrap/scss/functions', '~bootstrap/scss/variables';
+//@import "~bootstrap/scss/mixins";
+@import "mixins";
+
+@import "custom";
+
+// customize some Bootstrap variables
+//$primary: darken(#D6381B, 20%) !default;
+//$blue:darken(#D6381B, 20%) !default;
+//$brand-primary:       darken(#D6381B, 20%)  !default;
+
+// the ~ allows you to reference things in node_modules
+@import '~bootstrap/scss/bootstrap';
+@import 'confirm';
+
+body {
+  padding-top: 54px;
+  //style for desktop
+  @include desktop(){
+    padding-top: 56px;
+
+  }
+}
+
+
+.pagination {
+  margin-bottom: 15px;
+}
