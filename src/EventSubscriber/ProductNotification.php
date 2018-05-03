@@ -10,8 +10,6 @@ namespace App\EventSubscriber;
 
 
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\EventDispatcher\GenericEvent;
-use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use App\Events;
 use Twig_Environment;
 

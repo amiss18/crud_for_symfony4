@@ -33,8 +33,8 @@ class ContactController extends AbstractController {
 
 
         $message = (new \Swift_Message('Hello Email'))
-            ->setFrom('send@example.com')
-            ->setTo('admin@campany.com')
+            ->setFrom('sender@example.com')
+            ->setTo('receiver@campany.com')
             ->setBody(
                 $this->renderView(
                     'contact/email.html.twig',
