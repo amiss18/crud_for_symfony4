@@ -43,7 +43,6 @@ class DefaultController extends  AbstractController {
         $em = $this->getDoctrine()
             ->getRepository(Product::class);
        $products = $em->findProducts( $page, self::LIMIT);
-      //  $products =  $em->findProducts( $page, self::LIMIT);
         //  nombre total de pages
         $numberOfPages = ceil(count($products) / self::LIMIT);
 
